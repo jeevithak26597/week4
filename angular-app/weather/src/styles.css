@@ -70,13 +70,13 @@ body {
     width: 40%;
     height: inherit;
     float: left;
+    display: inline-flex;
 }
 
 .column1 {
-    float: left;
-    width: 30%;
-    height: inherit;
-}
+   
+    top: 10px;
+} 
 
 #temp {
     font-size: 64px;
@@ -85,31 +85,10 @@ body {
     font-weight: lighter;
 }
 
-.column2 {
-    float: left;
-    width: 70%;
-    font-stretch: 100%;
-    height: inherit;
+.row{
+    display: flex;
 }
 
-.col2_1 {
-    float: left;
-    width: 42%;
-    height: inherit;
-    margin-top: -13px;
-}
-
-.col2_2 {
-    float: left;
-    width: 29%;
-    height: inherit;
-    font-family: Arial, sans-serif;
-    font-weight: lighter;
-    color: #212121;
-    font-size: 16px;
-    margin-top: 3px;
-    cursor: default;
-}
 
 .banner-right {
     width: 60%;
@@ -131,23 +110,6 @@ body {
     margin: 0px 0px 0px 90px;
 }
 
-.btn {
-    width: 83px;
-    height: 29px;
-    background-color: #f5f5f5;
-    cursor: default;
-    font-family: arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 27px;
-    margin: 2px 0;
-    min-width: 54px;
-    padding: 0 8px;
-    text-align: center;
-    color: #444;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 .chart {
     width: 100%;

@@ -1,4 +1,3 @@
-<div class="">
 <h1 id="header">Employee ID Card Form</h1>
 <form novalidate [formGroup]="idFormGroup" class="container">
   <div id="iddiv">
@@ -49,9 +48,12 @@
   <label for="bloodgroup">Blood Group</label>
   <select name="bloodgroup" class="form-control" id="bloodgroup">
     <option value=""></option>
-    <option value="A1+ve">A1+ve</option>
+    <option value="A+ve">A+ve</option>
+    <option value="A-ve">A-ve</option>
     <option value="B+ve">B+ve</option>
     <option value="B-ve">B-ve</option>
+    <option value="O+ve">O+ve</option>
+    <option value="O-ve">O-ve</option>
     <option value="universal">universal</option>
   </select>
   <span id="bloodgrouperror" class="spanHide"></span>
@@ -99,4 +101,3 @@
   <br>
   <button type="button" class="btn btn-success" id="submitting" [disabled]="idFormGroup.invalid" (click)="onSubmit()">submit</button>
 </form>
-</div>

@@ -10,14 +10,14 @@
     </span>
   </div>
 </div>
-<div class="main-container" id="main-con">
+<div class="main-container" id="main-con" *ngIf="weatherService.summary">
   <app-summary [summaryInfo]="weatherService.summary"></app-summary>
   <app-temperature [tempInfo]="weatherService.temperature"></app-temperature>
   <app-tpw [tpwInfo]="weatherService.tpw"></app-tpw>
-  <app-chart></app-chart>
+  <app-chart [chartData]="weatherService.chartdetails"></app-chart>
   <div class="forecast">
-    <div class="col-xs-12" id="fore1">
-      <div class="row">
+    <div class="col-xs-12" >
+      <div class="row" id="fore1">
         <app-day-tile *ngFor="let dayInfo of weatherService.dayTileList" [dayTileInfo]="dayInfo"></app-day-tile>
       </div>
     </div>

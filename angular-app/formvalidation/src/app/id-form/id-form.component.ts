@@ -16,7 +16,7 @@ export class IdFormComponent implements OnInit {
     this.idFormGroup = new FormGroup({
       firstName: new FormControl('', Validators.required),
       fullName: new FormControl(''),
-      designation: new FormControl('General Manger', Validators.required),
+      designation: new FormControl('Associate Engineer', Validators.required),
       employeeCode: new FormControl('', [Validators.required, Validators.pattern(/^8[0-9]*/)]),
       contactFormGroup: new FormGroup({
         contactNumber: new FormControl(''),

@@ -10,7 +10,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./id-form.component.css']
 })
 export class IdFormComponent implements OnInit {
-
   idFormGroup: FormGroup;
   constructor(private httpService: Http) {
     this.idFormGroup = new FormGroup({
@@ -46,9 +45,10 @@ export class IdFormComponent implements OnInit {
     const postData = {
 
     }
-    const url = 'https://form-ee403.firebaseio.com/form.json';
+    const url = 'https://id-from.firebaseio.com/id-form.json';
     this.httpService.post(url, this.idFormGroup.value)
       .subscribe(rsp => console.log(rsp));
+
     console.log('Posted');
   }
 
